@@ -35,5 +35,5 @@ for i in range(len(data[:-1])):
         fa = float(data[i].split()[1])
         r += (b-a)*(fa+fb-f(b)-f(a))/2
 
-print "A =",r
+print "A1 =",r
 
