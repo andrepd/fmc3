@@ -17,6 +17,8 @@ b_ = dat[-1][1]-m*dat[-1][0]
 for i in range(len(dat)):
     dat[i][1]-=m*dat[i][0]+b_
 
+print "min =",argv[1]
+print "max =",argv[2]
 print "f(x)="+str(m)+"*x+"+str(b_)
 print "m =",m
 print "b =",b_
