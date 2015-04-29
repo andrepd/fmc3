@@ -13,6 +13,13 @@ for i in stdin.readlines()[::-1]:
         if found == True:
             break
 
-print ''.join(lines)
-#for i in lines[::-1]:
-    #print i
+out = ''.join(lines)
+outr = out.split('\n')[::-1][1:]
+
+for i in outr:
+    print i
+
+print
+
+for i in outr:
+    print i[i.index('=')+2:]
