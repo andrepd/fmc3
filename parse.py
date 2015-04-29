@@ -23,3 +23,10 @@ print
 
 for i in outr:
     print i[i.index('=')+2:]
+
+print
+
+for i,j in zip(outr[0:4],outr[4:8]):
+    print i[i.index('=')+2:],j[j.index('=')+2:]
+for i in outr[8:10]:
+    print i[i.index('=')+2:],i[i.index('=')+2:]
