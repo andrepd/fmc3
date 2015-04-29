@@ -19,7 +19,7 @@ for i in range(len(dat)):
 
 print "min =",argv[1]
 print "max =",argv[2]
-print "f(x)="+str(m)+"*x+"+str(b_)
+#print "f(x)="+str(m)+"*x+"+str(b_)
 print "m =",m
 print "b =",b_
 
