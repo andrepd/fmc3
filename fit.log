@@ -1178,3 +1178,74 @@ eta2            0.446  0.096 -0.272  0.637  0.473 -0.312  1.000
 A2             -0.892 -0.398  0.161 -0.927 -0.852  0.831 -0.747  1.000 
 m               0.023  0.019 -0.255  0.181 -0.016 -0.003  0.014 -0.043  1.000 
 b              -0.022 -0.018  0.262 -0.183  0.018  0.001 -0.011  0.041 -1.000  1.000 
+
+
+*******************************************************************************
+Wed Apr 29 18:37:57 2015
+
+
+FIT:    data read from 'patt.dat'
+        format = z
+        x range restricted to [36.9000 : 39.5000]
+        #datapoints = 169
+        residuals are weighted equally (unit weight)
+
+function used for fitting: V(x,x01,w1,eta1,A1)+V(x,x02,w2,eta2,A2)+f(x)
+fitted parameters initialized with current variable values
+
+
+
+ Iteration 0
+ WSSR        : 24053.7           delta(WSSR)/WSSR   : 0
+ delta(WSSR) : 0                 limit for stopping : 1e-05
+ lambda	  : 207.294
+
+initial set of free parameter values
+
+x01             = 37.78
+w1              = 0.05
+eta1            = 0.5
+A1              = 15.6098
+x02             = 37.87
+w2              = 0.03
+eta2            = 0.5
+A2              = 7.80491
+m               = -0.283031
+b               = 13.8069
+
+After 12 iterations the fit converged.
+final sum of squares of residuals : 15.2778
+rel. change during last iteration : -2.28347e-06
+
+degrees of freedom    (FIT_NDF)                        : 159
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.309979
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0960867
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+
+x01             = 37.786           +/- 0.0005124    (0.001356%)
+w1              = 0.0564691        +/- 0.0003036    (0.5377%)
+eta1            = 0.120422         +/- 0.01121      (9.307%)
+A1              = 13.7442          +/- 0.1457       (1.06%)
+x02             = 37.8884          +/- 0.001101     (0.002907%)
+w2              = 0.0385949        +/- 0.001398     (3.621%)
+eta2            = 0.390598         +/- 0.04982      (12.75%)
+A2              = 3.01246          +/- 0.1413       (4.691%)
+m               = -0.0125139       +/- 0.03454      (276%)
+b               = 3.18885          +/- 1.327        (41.61%)
+
+
+correlation matrix of the fit parameters:
+
+               x01    w1     eta1   A1     x02    w2     eta2   A2     m      b      
+x01             1.000 
+w1              0.395  1.000 
+eta1           -0.036  0.513  1.000 
+A1              0.843  0.375 -0.384  1.000 
+x02             0.888  0.530  0.177  0.761  1.000 
+w2             -0.910 -0.517 -0.131 -0.767 -0.925  1.000 
+eta2            0.446  0.096 -0.272  0.637  0.473 -0.312  1.000 
+A2             -0.892 -0.398  0.161 -0.927 -0.852  0.831 -0.747  1.000 
+m               0.023  0.019 -0.255  0.181 -0.016 -0.003  0.014 -0.043  1.000 
+b              -0.022 -0.018  0.262 -0.183  0.018  0.001 -0.011  0.041 -1.000  1.000 
