@@ -1,5 +1,2 @@
-#Ignorar a pasta dos resultados
-results/*
-
 #Ignorar o log do gnuplot
 *.log
