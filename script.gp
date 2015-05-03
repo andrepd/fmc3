@@ -12,7 +12,7 @@ G(x,x0,w)=sqrt( log(2) / pi ) * exp( -log(2)*( (x-x0)/w )**2 ) / w
 L(x,x0,w)=1/( pi*w*( 1 + ((x-x0)/w)**2 ) )
 V(x,x0,w,eta,A)=A*( eta*G(x,x0,w) + (1-eta)*L(x,x0,w) )
 
-do for [i=9:9]{ #O valor i vai do grupo de picos inicial ao grupo final
+do for [i=1:32]{ #O valor i vai do grupo de picos inicial ao grupo final
 	load 'guesses/group'.i.'.par'
 
 	if (number_of_peaks==2) {
@@ -28,9 +28,9 @@ do for [i=9:9]{ #O valor i vai do grupo de picos inicial ao grupo final
 		set output 'results/group'.i.'.pdf'
 		set xrange [min:max]
 		plot 'patt.dat' ps .5 title 'Pontos experimentais',\
-		F(x) title 'Fit', 'patt.dat' u 1:($2-F($1)) w lines title 'Erro',\
-		V(x,x01,w1,eta1,A1)+b lc -1 notitle,\
-		V(x,x02,w2,eta2,A2)+b lc -1 notitle
+		F(x) title 'Fit' lc -1, 'patt.dat' u 1:($2-F($1)) w lines title 'Erro',\
+		V(x,x01,w1,eta1,A1)+b lc rgb "#909090" notitle,\
+		V(x,x02,w2,eta2,A2)+b lc rgb "#909090" notitle
 		set o
 		
 	} else {
@@ -50,11 +50,11 @@ do for [i=9:9]{ #O valor i vai do grupo de picos inicial ao grupo final
 			set output 'results/group'.i.'.pdf'
 			set xrange [min:max]
 			plot 'patt.dat' ps .5 title 'Pontos experimentais',\
-				F(x) title 'Fit', 'patt.dat' u 1:($2-F($1)) w lines title 'Erro',\
-				V(x,x01,w1,eta1,A1)+b lc -1 notitle,\
-				V(x,x02,w2,eta2,A2)+b lc -1 notitle,\
-				V(x,x03,w3,eta3,A3)+b lc -1 notitle,\
-				V(x,x04,w4,eta4,A4)+b lc -1 notitle
+				F(x) title 'Fit' lc -1, 'patt.dat' u 1:($2-F($1)) w lines title 'Erro',\
+				V(x,x01,w1,eta1,A1)+b lc rgb "#909090" notitle,\
+				V(x,x02,w2,eta2,A2)+b lc rgb "#909090" notitle,\
+				V(x,x03,w3,eta3,A3)+b lc rgb "#909090" notitle,\
+				V(x,x04,w4,eta4,A4)+b lc rgb "#909090" notitle
 			set o
 			
 		} else {
@@ -72,13 +72,13 @@ do for [i=9:9]{ #O valor i vai do grupo de picos inicial ao grupo final
 			set output 'results/group'.i.'.pdf'
 			set xrange [min:max]
 			plot 'patt.dat' ps .5 title 'Pontos experimentais',\
-				F(x) title 'Fit', 'patt.dat' u 1:($2-F($1)) w lines title 'Erro',\
-				V(x,x01,w1,eta1,A1)+b lc -1 notitle,\
-				V(x,x02,w2,eta2,A2)+b lc -1 notitle,\
-				V(x,x03,w3,eta3,A3)+b lc -1 notitle,\
-				V(x,x04,w4,eta4,A4)+b lc -1 notitle,\
-				V(x,x05,w5,eta5,A5)+b lc -1 notitle,\
-				V(x,x06,w6,eta6,A6)+b lc -1 notitle
+				F(x) title 'Fit' lc -1, 'patt.dat' u 1:($2-F($1)) w lines title 'Erro',\
+				V(x,x01,w1,eta1,A1)+b lc rgb "#909090" notitle,\
+				V(x,x02,w2,eta2,A2)+b lc rgb "#909090" notitle,\
+				V(x,x03,w3,eta3,A3)+b lc rgb "#909090" notitle,\
+				V(x,x04,w4,eta4,A4)+b lc rgb "#909090" notitle,\
+				V(x,x05,w5,eta5,A5)+b lc rgb "#909090" notitle,\
+				V(x,x06,w6,eta6,A6)+b lc rgb "#909090" notitle
 			set o
 		}
 	}
