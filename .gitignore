@@ -1,2 +1,4 @@
 #Ignorar o log do gnuplot
 *.log
+*.ods
+*.dat
